@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+"lab6-4\main.o"
+"lab6-4\stm32f1xx_it.o"
+"lab6-4\stm32f1xx_hal_msp.o"
+"lab6-4\system_stm32f1xx.o"
+"lab6-4\stm32f1xx_hal_gpio_ex.o"
+"lab6-4\stm32f1xx_hal_cortex.o"
+"lab6-4\stm32f1xx_hal_rcc.o"
+"lab6-4\stm32f1xx_hal_gpio.o"
+"lab6-4\stm32f1xx_hal_rcc_ex.o"
+"lab6-4\stm32f1xx_hal_flash_ex.o"
+"lab6-4\stm32f1xx_hal_dma.o"
+"lab6-4\stm32f1xx_hal_flash.o"
+"lab6-4\stm32f1xx_hal.o"
+"lab6-4\stm32f1xx_hal_pwr.o"
+"lab6-4\startup_stm32f103xb.o"
+--library_type=microlib --strict --scatter "lab6-4\lab6-4.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "lab6-4.map" -o lab6-4\lab6-4.axf
